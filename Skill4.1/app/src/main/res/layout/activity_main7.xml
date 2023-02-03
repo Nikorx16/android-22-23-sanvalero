@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity7">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:text="@string/titulo"
+    android:textSize="25sp"
+    android:gravity="center"
+    android:textStyle="bold"
+    android:layout_marginBottom="30dp"
+    tools:ignore="MissingConstraints" />
+    <EditText
+        android:id="@+id/txtNombre"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:hint="Ingrese su nombre"/>
+
+    <Button
+        android:id="@+id/btnIngresar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/text_btn_ingresar"
+        android:layout_marginTop="30dp"
+        android:onClick="evento"/>
+    <Button
+        android:id="@+id/btnEnviar"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="Enviar"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp"
+        android:onClick="evento"/>
+    <TextView
+        android:id="@+id/etiNombre"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:text="@string/text_msj_bienvenida"/>
+</androidx.constraintlayout.widget.ConstraintLayout>
